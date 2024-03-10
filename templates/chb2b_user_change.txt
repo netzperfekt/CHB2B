@@ -1,0 +1,24 @@
+{include file="string:{config name=emailheaderplain}"}
+
+Guten Tag,
+
+es soll ein B2B-Nutzer geändert werden.
+
+
+Anforderer: {$user.lastname}, {$user.firstname} - {$user.email} (#{$customerNumber}.{$customerSubNumber})
+
+
+Zu ändernder Nutzer
+-------------------
+
+Kundennummer: {$changeUser.text1}.{$changeUser.text2}
+
+Name: {$changeUser.lastname}, {$changeUser.firstname}
+
+E-Mail: {$changeUser.email}
+
+Budget: {$budget}
+
+Rolle(n): {$roles}
+
+{include file="string:{config name=emailfooterplain}"}

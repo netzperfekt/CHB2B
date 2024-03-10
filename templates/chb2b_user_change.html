@@ -1,0 +1,20 @@
+<div style="font-family:arial; font-size:12px;">
+    {include file="string:{config name=emailheaderhtml}"}
+    <br><br>
+    <p>
+        Guten Tag,<br>
+        <br>
+        es soll ein B2B-Nutzer geändert werden.
+        <br><br>
+        Anforderer: {$user.lastname}, {$user.firstname} - {$user.email} (#{$customerNumber}.{$customerSubNumber})<br>
+        <br>
+        <b>Zu ändernder Nutzer</b><br>
+        <br>
+        Kundennummer: {$changeUser.text1}.{$changeUser.text2}<br>
+        Name: {$changeUser.lastname}, {$changeUser.firstname}<br>
+        E-Mail: {$changeUser.email}<br>
+        Budget: {$budget}<br>
+        Rolle(n): {$roles}<br>
+    </p>
+    {include file="string:{config name=emailfooterhtml}"}
+</div>

@@ -1,0 +1,20 @@
+{include file="string:{config name=emailheaderplain}"}
+
+Guten Tag,
+
+es soll ein B2B-Nutzer gesperrt werden.
+
+
+Anforderer: {$user.lastname}, {$user.firstname} - {$user.email} (#{$customerNumber})
+
+
+Zu sperrender Nutzer
+--------------------
+
+Kundennummer: {$deleteUser.text1}.{$deleteUser.text2}
+
+Name: {$deleteUser.lastname}, {$deleteUser.firstname}
+
+E-Mail: {$deleteUser.email}
+
+{include file="string:{config name=emailfooterplain}"}

@@ -1,0 +1,16 @@
+<div style="font-family:arial; font-size:12px;">
+    {include file="string:{config name=emailheaderhtml}"}
+    <br><br>
+    <p>
+        Guten Tag,<br>
+        <br>
+    Ihre Bestellanforderung #{$cart.basketID} (<i>{$cart.articlename}</i> u.a.) wurde zurückgewiesen.<br>
+        <br>
+    Nachricht: <b>{$cart.message}</b><br>
+    <br>
+    Bitte prüfen Sie diese Anforderung und stellen Sie diese ggf. neu.<br>
+    <br>
+        <a href="{$linkAccountCarts}">Zum Kundenaccount</a>
+    </p>
+    {include file="string:{config name=emailfooterhtml}"}
+</div>

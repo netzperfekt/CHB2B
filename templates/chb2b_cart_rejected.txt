@@ -1,0 +1,13 @@
+{include file="string:{config name=emailheaderplain}"}
+
+Guten Tag,
+
+Ihre Bestellanforderung #{$cart.basketID} ({$cart.articlename} u.a.) wurde zurückgewiesen.
+
+Nachricht: {$cart.message}
+
+Bitte prüfen Sie diese Anforderung und stellen Sie diese ggf. neu.
+
+{$linkAccountCarts}
+
+{include file="string:{config name=emailfooterplain}"}

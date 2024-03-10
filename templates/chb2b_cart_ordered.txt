@@ -1,0 +1,9 @@
+{include file="string:{config name=emailheaderplain}"}
+
+Guten Tag,
+
+Ihre Bestellanforderung #{$cart.basketID} ({$cart.articlename} u.a.) wurde freigegeben und bestellt.
+
+{$linkAccountCarts}
+
+{include file="string:{config name=emailfooterplain}"}

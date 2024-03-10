@@ -1,0 +1,18 @@
+<div style="font-family:arial; font-size:12px;">
+    {include file="string:{config name=emailheaderhtml}"}
+    <br><br>
+    <p>
+        Guten Tag,<br>
+        <br>
+        es soll ein B2B-Nutzer gesperrt werden.
+        <br><br>
+        Anforderer: {$user.lastname}, {$user.firstname} - {$user.email} (#{$customerNumber}.{$customerSubNumber})<br>
+        <br>
+        <b>Zu sperrender Nutzer</b><br>
+        <br>
+        Kundennummer: {$deactivateUser.text1}.{$deactivateUser.text2}<br>
+        Name: {$deactivateUser.lastname}, {$deactivateUser.firstname}<br>
+        E-Mail: {$deactivateUser.email}
+    </p>
+    {include file="string:{config name=emailfooterhtml}"}
+</div>

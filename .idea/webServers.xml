@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="39349788-e499-4177-9544-a2f3231036c8" name="ch b2b testserver" url="http://shop.carl-henkel.de/__B2__">
+        <fileTransfer rootFolder="/web/__B2B__" host="shop.carl-henkel.de" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

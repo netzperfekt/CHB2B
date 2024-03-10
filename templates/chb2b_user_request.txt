@@ -1,0 +1,26 @@
+{include file="string:{config name=emailheaderplain}"}
+
+Guten Tag,
+
+es soll ein neuer B2B-Nutzer eingerichtet werden.
+
+
+Anforderer: {$user.lastname}, {$user.firstname} - {$user.email} (#{$customerNumber}.{$customerSubNumber})
+
+
+Daten des neuen Nutzers
+-----------------------
+
+Kundennummer: {$customerNumber}
+
+E-Mail: {$email}
+
+Vorname: {$firstName}
+
+Nachname: {$lastName}
+
+Budget: {if $budget == 0}- keine Beschränkung - {else}{$budget} €{/if}
+
+Rolle(n): {$roles}
+
+{include file="string:{config name=emailfooterplain}"}

@@ -1,0 +1,15 @@
+<div style="font-family:arial; font-size:12px;">
+    {include file="string:{config name=emailheaderhtml}"}
+    <br><br>
+    <p>
+        Guten Tag,<br>
+        <br>
+	    <b>{$user.firstname} {$user.lastname}</b> hat eine neue Bestellung angefordert:
+        #{$cart.basketID} (<i>{$cart.articlename}</i> u.a.)
+        <br>
+    	Bitte prüfen Sie diese und geben sie ggf. frei.
+	    <br>
+        <a href="{$linkAccountCarts}">Zum Kundenaccount</a>
+    </p>
+    {include file="string:{config name=emailfooterhtml}"}
+</div>

@@ -1,0 +1,13 @@
+{include file="string:{config name=emailheaderplain}"}
+
+Guten Tag,
+
+{$user.firstname} {$user.lastname} hat eine neue Bestellung angefordert.
+
+#{$cart.basketID} (<i>{$cart.articlename}</i> u.a.)
+
+Bitte prüfen Sie diese und geben sie ggf. frei.
+
+{$linkAccountCarts}
+
+{include file="string:{config name=emailfooterplain}"}

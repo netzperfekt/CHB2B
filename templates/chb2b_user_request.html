@@ -1,0 +1,21 @@
+<div style="font-family:arial; font-size:12px;">
+    {include file="string:{config name=emailheaderhtml}"}
+    <br><br>
+    <p>
+        Guten Tag,<br>
+        <br>
+        es soll ein neuer B2B-Nutzer eingerichtet werden.
+        <br><br>
+        Anforderer: {$user.lastname}, {$user.firstname} - {$user.email} (#{$customerNumber}.{$customerSubNumber})<br>
+        <br>
+        <b>Daten des neuen Nutzers:</b>
+        <br><br>
+        Kundennummer: {$customerNumber}<br>
+        E-Mail: {$email}<br>
+        Vorname: {$firstName}<br>
+        Nachname: {$lastName}<br>
+        Budget: {if $budget == 0}- keine Beschränkung - {else}{$budget} €{/if}<br>
+        Rolle(n): {$roles}
+    </p>
+    {include file="string:{config name=emailfooterhtml}"}
+</div>
