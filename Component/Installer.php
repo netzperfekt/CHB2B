@@ -310,7 +310,7 @@ class Installer
 
         $this->acl->createRole(Acl::ROLE_ADMIN,
             Acl::ROLE_ADMIN_SHORT,
-            'Admininistrator',
+            'Administrator',
             'Diese Rolle kann Verwaltungstätigkeiten durchführen.'
         );
     }
